@@ -16,8 +16,6 @@ public class Game {
     }
 
     public void play() {
-        int switchWins = 0;
-        int stayWins = 0;
 
         for(int plays = 0;plays < roundsNumber;plays++ ){
 
@@ -57,7 +55,7 @@ public class Game {
         }
     }
 
-    public void calResults() {
+    public void calcResults() {
         int winCount = (int)results.entrySet().stream().filter(Map.Entry::getValue).count();
         System.out.printf("Games %s. Wins %s, Success %s", roundsNumber, winCount, winCount*100/roundsNumber);
     }
