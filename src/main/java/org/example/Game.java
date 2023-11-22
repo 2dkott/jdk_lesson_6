@@ -8,7 +8,6 @@ public class Game {
 
     private int roundsNumber;
     Random randomGen = new Random();
-    int[] doors = {0,0,0};
 
     Map<Integer, Boolean> results = new HashMap<>();
     public Game(int roundsNumber) {
